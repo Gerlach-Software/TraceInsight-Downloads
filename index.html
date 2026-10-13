@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TraceInsight — Downloads</title>
+  <style>
+    body {
+      margin: 0;
+      background: #101827;
+      color: #edf2fa;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 24px;
+    }
+    h1 { font-size: 48px; margin-bottom: 8px; }
+    p { color: #b9c6db; }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .card {
+      flex: 1 1 260px;
+      padding: 24px;
+      background: #1b283d;
+      border-radius: 16px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: #65b5ff;
+      color: #101827;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .disabled {
+      background: #36445a;
+      color: #b9c6db;
+    }
+    footer { margin-top: 48px; }
+    footer a { color: #65b5ff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>TraceInsight</h1>
+    <p>Download TraceInsight for your computer.</p>
+
+    <div class="cards">
+      <section class="card">
+        <h2>macOS</h2>
+        <p>Download the installer, open it, and follow the instructions.
+           Then launch TraceInsight from Applications.</p>
+        <a class="button"
+           href="https://github.com/Gerlach-Software/TraceInsight-Downloads/releases/latest/download/TraceInsight-Installer.pkg">
+          Download for macOS
+        </a>
+      </section>
+
+      <section class="card">
+        <h2>Windows</h2>
+        <p>The Windows installer will be available soon.</p>
+        <span class="button disabled">Coming soon</span>
+      </section>
+    </div>
+
+    <footer>
+      <a href="https://github.com/Gerlach-Software/TraceInsight-Downloads/releases">
+        View releases and release notes
+      </a>
+      <p>© Gerlach-Software</p>
+    </footer>
+  </main>
+</body>
+</html>
