@@ -17,7 +17,28 @@
       margin: 80px auto;
       padding: 24px;
     }
-    h1 { font-size: 48px; margin-bottom: 8px; }
+    .page-header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .company-logo {
+      display: block;
+      width: 200px;
+      height: 200px;
+      flex: 0 0 auto;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 20px;
+    }
+    h1 { font-size: 48px; margin: 0 0 8px; }
+    .page-header p { margin: 0; }
+    @media (max-width: 560px) {
+      main { margin-top: 24px; }
+      .page-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+      h1 { font-size: 40px; }
+    }
     p { color: #b9c6db; }
     .cards {
       display: flex;
@@ -50,8 +71,14 @@
 </head>
 <body>
   <main>
-    <h1>TraceInsight</h1>
-    <p>Download TraceInsight for your computer.</p>
+    <header class="page-header">
+      <img class="company-logo" src="gerlach_software_transparent.png"
+           alt="gerlach.software" width="200" height="200">
+      <div>
+        <h1>TraceInsight</h1>
+        <p>Download TraceInsight for your computer.</p>
+      </div>
+    </header>
 
     <div class="cards">
       <section class="card">
